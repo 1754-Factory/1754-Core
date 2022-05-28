@@ -12,9 +12,9 @@ import "@openzeppelin/contracts/utils/introspection/ERC165.sol";
 import "./Structures/CreditorStructures.sol";
 
 contract ERC721Credit is ERC721, CreditorStructures {
-    mapping(uint256 => Credit) creditData; // Maps tokenIds to credit structure
-    address minter;
-    uint256 linesOfCredit;
+    mapping(uint256 => Credit) private creditData; // Maps tokenIds to credit structure
+    address public minter;
+    uint256 public linesOfCredit;
 
     constructor(address _minter) ERC721("Credit Receipts", "CRED") {
         minter = _minter;
