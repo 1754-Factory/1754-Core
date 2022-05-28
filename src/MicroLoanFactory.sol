@@ -6,8 +6,8 @@ import "./IERC721Credit.sol";
 import "./Structures/CreditorStructures.sol";
 import "./Structures/LoanStructures.sol";
 import "./Structures/MicroLoanEvents.sol";
-import "openzeppelin-contracts/contracts/access/Ownable.sol";
-import "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract MicroLoanFactory is LoanStructures, MicroLoanEvents, Ownable {
     mapping(address => bool) whitelist;
