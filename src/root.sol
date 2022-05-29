@@ -3,7 +3,6 @@ pragma solidity ^0.8.10;
 
 import "@1754-factory/packages/src/auth/auth.sol";
 
-// node_modules/@1754-factory/packages/src/auth/auth.sol
 interface AuthLike {
     function rely(address) external;
 
