@@ -4,3 +4,6 @@
 [submodule "lib/openzeppelin-contracts"]
 	path = lib/openzeppelin-contracts
 	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "lib/1754-Packages"]
+	path = lib/1754-Packages
+	url = https://github.com/1754-Factory/1754-Packages
